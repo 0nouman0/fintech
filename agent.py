@@ -19,8 +19,8 @@ class FinancialSafetyNet:
             raise ValueError("GEMINI_API_KEY not found in environment variables.")
         
         self.client = genai.Client(api_key=api_key)
-        # Using gemini-flash-latest as it is available and likely has better quota
-        self.model_name = "gemini-flash-latest" 
+        # Switching to gemini-1.5-flash for better stability/quota
+        self.model_name = "gemini-1.5-flash" 
 
         self.system_instruction = """
 You are the "Financial Safety Net Agent" for India.
