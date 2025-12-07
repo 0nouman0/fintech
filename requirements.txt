@@ -1,0 +1,9 @@
+google-genai
+pillow
+python-dotenv
+opencv-python
+qreader
+fastapi
+uvicorn
+python-multipart
+gTTS
